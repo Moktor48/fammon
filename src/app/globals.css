@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +24,55 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+table {
+  border-width: 8px;
+  border-color: white; 
+  table-layout: fixed;
+  text-align: center;
+  color: yellow;
+}
+
+#monthHead {
+  text-align: center;
+}
+
+td {
+  border-width: 4px;
+  border-color: lightgrey;
+  width: 180px;
+  height: 180px;
+  text-align: right;
+  
+  color: yellow;
+}
+
+td p {
+  min-height: 30px;
+}
+
+td p:nth-child(1) {
+  background-color: black;
+  font-weight: bold;
+}
+
+td p:nth-child(2) {
+  background-color: grey;
+}
+
+td p:nth-child(3) {
+  background-color: grey;
+}
+
+td p:nth-child(4) {
+  background-color: grey;
+}
+
+td p:nth-child(5) {
+  background-color: grey;
+}
+
+td p:nth-child(6) {
+  background-color: grey;
 }
